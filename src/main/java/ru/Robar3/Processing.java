@@ -29,4 +29,10 @@ public class Processing {
         }
         return true;
     }
+
+
+    public static void main(String[] args) {
+      boolean a=correctIn("Hello");
+        System.out.println(a);
+    }
 }
