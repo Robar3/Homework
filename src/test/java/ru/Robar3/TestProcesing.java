@@ -65,7 +65,7 @@ public class TestProcesing {
     public void testCorrectIn(String a) {
         Assert.assertTrue(correctIn(a));
     }
-    @Test(description = "Ожидание ошибки метода correctIn",dataProvider = "exeptionValidate",expectedExceptions = NumberFormatException.class)
+    @Test(description = "Ожидание ошибки метода twoToEight",dataProvider = "exeptionValidate",expectedExceptions = NumberFormatException.class)
     public void valueExeption(String a) {
         twoToEight(a);
     }
