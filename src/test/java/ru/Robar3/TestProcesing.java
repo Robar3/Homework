@@ -29,7 +29,7 @@ public class TestProcesing {
                 {"110011","63"},{"1001000","110"},{"1011111","137"}
         };
     }
-    @Test(description = "Десятичные числа в двоичные",dataProvider = "tenToTwo",threadPoolSize = 5)
+    @Test(description = "Десятичные числа в двоичные",dataProvider = "tenToTwo")
     public void testTenToTwo(int a,String result){
     Assert.assertEquals(tenToTwo(a),result);
 }
