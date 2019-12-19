@@ -29,6 +29,12 @@ public class TestProcesing {
                 {"110011","63"},{"1001000","110"},{"1011111","137"}
         };
     }
+    @DataProvider(name= "validate")
+    public Object[][] m4(){
+      return new Object[][]{
+              {"6"},{"1001000"},{"137"}
+      };
+    }
     @Test(description = "Десятичные числа в двоичные",dataProvider = "tenToTwo")
     public void testTenToTwo(int a,String result){
     Assert.assertEquals(tenToTwo(a),result);
@@ -40,5 +46,9 @@ public class TestProcesing {
     @Test(description = "Двоичные числа в восьмиричные",dataProvider = "twoToEight")
     public void testTwoToEight(String a,String result){
         Assert.assertEquals(twoToEight(a),result);
+}
+@Test(description = "проверка является ли числом",dataProvider ="validate" )
+    public void testCorrectIn(String a){
+      Assert.assertTrue(correctIn(a));
 }
 }
