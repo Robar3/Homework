@@ -10,7 +10,7 @@ public class Processing {
     }
 
     public static String twoToEight(String eightNumber) {
-        return Long.toHexString(Long.parseLong(eightNumber, 2));
+        return Long.toOctalString(Long.parseLong(eightNumber, 2));
     }
 
     public static boolean correctIn(String validNumber) {

@@ -1,0 +1,14 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="ioTests" >
+        <classes>
+            <class name="ru.Robar3.TestProcesing" />
+            <methods>
+                <include name="testTenToTwo"/>
+                <include name="testTenToSixteen"/>
+                <include name="testTwoToEight"/>
+            </methods>
+        </classes>
+    </test>
+</suite>
